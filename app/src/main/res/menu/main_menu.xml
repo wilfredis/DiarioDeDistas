@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Btn_Control"
+        android:title="Agregar Parametros de peso" />
+    <item
+        android:id="@+id/Btnf_Addprogress"
+        android:title="Agregar progreso de peso" />
+</menu>
