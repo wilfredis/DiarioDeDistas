@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.room.*
 
+
 class Rgistroprogresso : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -11,14 +12,14 @@ class Rgistroprogresso : AppCompatActivity() {
     }
 }
 
- data class Resow(
+public data class Resow(
          @PrimaryKey(autoGenerate = true) val uid: Int,
          @ColumnInfo(name = "ID_Uss") val ID_Uss: Int?,
          @ColumnInfo(name = "Fella") val Fella: String?,
          @ColumnInfo(name = "Peso") val Peso: String?
 )
 @Dao
- interface ResowDao {
+ public interface ResowDao {
     @Query("SELECT * FROM Resow")
     fun getAll(): List<Resow>
 
@@ -32,3 +33,4 @@ class Rgistroprogresso : AppCompatActivity() {
     fun delete(user: Resow)
 
 }
+
